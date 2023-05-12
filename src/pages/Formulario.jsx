@@ -4,6 +4,13 @@ import { useState } from 'react'
 const Formulario = ({ sede, setSede }) => {
 
     const [nombre, setNombre] = useState('')
+    const [apellido, setApellido] = useState('')
+    const [dni, setDni] = useState('')
+    const [edad, setEdad] = useState()
+    const [estado_civil, setEstado_civil] = useState('')
+    const [dep_prov, setDep_prov] = useState('')
+    const [distrito, setDistrito] = useState('')
+    const [fecha_nac, setFecha_nac] = useState('')
 
     console.log(nombre)
     return (
@@ -32,6 +39,8 @@ const Formulario = ({ sede, setSede }) => {
                     <div className='datospersonales-group'>
                         <label htmlFor="apellido">Apellidos</label>
                         <input
+                            onChange={(e) => setApellido(e.target.value)}
+                            value={apellido}
                             type="text"
                             id='apellido'
                             name='apellido'
@@ -40,6 +49,8 @@ const Formulario = ({ sede, setSede }) => {
                     <div className='datospersonales-group'>
                         <label htmlFor="dni">DNI</label>
                         <input
+                            onChange={(e) => setDni(e.target.value)}
+                            value={dni}
                             type="text"
                             id='dni'
                             name='dni'
@@ -48,6 +59,8 @@ const Formulario = ({ sede, setSede }) => {
                     <div className='datospersonales-group'>
                         <label htmlFor="edad">Edad</label>
                         <input
+                            onChange={(e) => setEdad(e.target.value)}
+                            value={edad}
                             type="number"
                             id='edad'
                             name='edad'
@@ -56,7 +69,9 @@ const Formulario = ({ sede, setSede }) => {
                     <div className='datospersonales-group'>
                         <label htmlFor="estado">Estado civil</label>
                         <input
-                            type="number"
+                            onChange={(e) => setEstado_civil(e.target.value)}
+                            value={estado_civil}
+                            type="text"
                             id='estado'
                             name='estado'
                             placeholder='Elgie tu estado civil' />
@@ -65,6 +80,8 @@ const Formulario = ({ sede, setSede }) => {
                     <div className='datospersonales-group'>
                         <label htmlFor="departamento">Departamento/Provincia</label>
                         <input
+                            onChange={(e) => setDep_prov(e.target.value)}
+                            value={dep_prov}
                             type="text"
                             id='departamento'
                             name='departamento'
@@ -73,6 +90,8 @@ const Formulario = ({ sede, setSede }) => {
                     <div className='datospersonales-group'>
                         <label htmlFor="fecha_nac">Distrito</label>
                         <input
+                            onChange={(e) => setDistrito(e.target.value)}
+                            value={distrito}
                             type="text"
                             id='distrito'
                             name='distrito'
@@ -81,6 +100,8 @@ const Formulario = ({ sede, setSede }) => {
                     <div className='datospersonales-group'>
                         <label htmlFor="fecha_nac">Fecha de nacimiento</label>
                         <input
+                            onChange={(e) => setFecha_nac(e.target.value)}
+                            value={fecha_nac}
                             type="date"
                             id='fecha_nac'
                             name='fecha_nac' />
