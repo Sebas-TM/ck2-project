@@ -1,0 +1,148 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 0 4rem;
+}
+
+.titulo {
+  /* font-weight: normal; */
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.titulo span {
+  color: rgb(158, 12, 12);
+  font-weight: 700;
+
+}
+
+.contenedor-principal .subtitulo {
+  text-align: center;
+  font-weight: normal;
+}
+
+
+
+.contenedor-imagenes {
+  margin-top: 5rem;
+  gap: 2rem;
+  padding: 0 4rem;
+}
+
+@media(min-width:768px) {
+  .contenedor-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.contenedor-imagen {
+  height: 11rem;
+  width: 11rem;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.card-titulo {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+@media (min-width:768px) {
+  .card {
+    margin-bottom: 0;
+  }
+}
+
+.card-descripcion {
+  text-align: center;
+}
+
+.postulacion {
+  /* max-width: 120rem; */
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.postulacion-titulo {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contenedor-botones {
+  max-width: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.boton {
+  padding: 1rem 3rem;
+  width: 14rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: rgb(158, 12, 12);
+  transition: all .3s ease;
+  border-radius: 8px;
+}
+
+.boton:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.form-disable{
+  display: none;
+}

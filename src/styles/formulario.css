@@ -1,0 +1,51 @@
+.formulario {
+    padding: 2rem ;
+    margin: 2rem 3rem;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.encabezado .encabezado-titulo {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.encabezado .boton-cerrar {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all .1s ease;
+}
+
+.encabezado .boton-cerrar:hover{
+    transform: scale(1.1);
+}
+
+.formulario .titulo {
+    margin-top: 2rem;
+}
+
+.datospersonales-group {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    min-width: 100%;
+}
+
+.datospersonales-group input{
+    max-width: 100%;
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+}
+
+.form-subtitulo{
+    margin: 2rem;
+}

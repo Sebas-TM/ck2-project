@@ -1,0 +1,48 @@
+.nosotros {
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3rem 0;
+}
+
+@media (min-width:768px) {
+    .nosotros {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+.contenedor-carrusel {
+    display: grid;
+    place-items: center;
+}
+
+.contenedor-carrusel .titulo {
+    color: brown;
+}
+
+.contenedor-carrusel .carrusel {
+    height: 20rem;
+    width: 25rem;
+    background-color: gray;
+}
+
+@media (min-width:768px) {
+    .contenedor-carrusel .carrusel {
+        height: 30rem;
+        width: 40rem;
+    }
+}
+
+.contenedor-informacion {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 5rem 0;
+}
+
+
+
+.contenedor-informacion p {
+    margin-top: 1rem;
+}
