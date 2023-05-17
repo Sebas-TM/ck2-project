@@ -5,6 +5,23 @@
     border-radius: 8px;
 }
 
+@media (min-width:768px) {
+    .formulario{
+        width: 70%;
+    }
+    .contenedor-inputs-primero .contenedor-principal{
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+    }
+    .contenedor-nacimiento{
+        width: 50%;
+    }
+    .contenedor-datos-personales{
+        width: 50%;
+    }
+}
+
 .encabezado {
     display: flex;
     align-items: center;
@@ -40,7 +57,7 @@ label{
     min-width: 100%;
 }
 
-.datospersonales-group input{
+.datospersonales-group input, .estado_civil{
     max-width: 100%;
     margin-top: 1rem;
     padding: .5rem 1rem;

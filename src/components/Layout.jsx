@@ -28,9 +28,9 @@ const Layout = () => {
                     </div>
                 </div>
                 <div className={height==200 ? 'active': 'navegacion'}>
-                    <Link to="/" className='link'>Inicio</Link>
-                    <Link to="/nosotros" className='link'>Nosotros</Link>
-                    <Link to="/contacto" className='link'>Contactanos</Link>
+                    <Link onClick={openMenu} to="/" className='link'>Inicio</Link>
+                    <Link onClick={openMenu} to="/nosotros" className='link'>Nosotros</Link>
+                    <Link onClick={openMenu} to="/contacto" className='link'>Contactanos</Link>
                 </div>
             </header>
             <div className='outlet'>

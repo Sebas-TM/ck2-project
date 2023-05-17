@@ -45,7 +45,7 @@ const Index = () => {
                 </div>
             </section>
 
-            <section className={sede == '' ? 'form-disable': ''}>
+            <section className={sede == '' ? 'form-disable': 'formulario-contenedor'}>
                 <Formulario sede={sede} setSede={setSede} />
             </section>
 

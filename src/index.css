@@ -143,6 +143,14 @@ a {
   transform: scale(1.1);
 }
 
-.form-disable{
+.form-disable {
   display: none;
+}
+
+@media (min-width:768px) {
+  .formulario-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
