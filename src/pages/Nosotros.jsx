@@ -9,11 +9,21 @@ const Nosotros = () => {
             <div className="contenedor-informacion">
                 <div className='info'>
                     <h2>Mision</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque voluptates consectetur. Impedit asperiores soluta doloremque mollitia repellendus sunt minima libero dolorem similique voluptatem pariatur, ipsum tempora cum quo doloribus.</p>
+                    <p className='info-texto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque voluptates consectetur. Impedit asperiores soluta doloremque mollitia repellendus sunt minima libero dolorem similique voluptatem pariatur, ipsum tempora cum quo doloribus.</p>
                 </div>
                 <div className='info'>
                     <h2>Vision</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, facilis, laboriosam nihil placeat debitis numquam assumenda, quaerat voluptas suscipit non vel! Ipsum maxime, alias maiores sint et neque natus recusandae?</p>
+                    <p className='info-texto'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, facilis, laboriosam nihil placeat debitis numquam assumenda, quaerat voluptas suscipit non vel! Ipsum maxime, alias maiores sint et neque natus recusandae?</p>
+                </div>
+                <div className='info'>
+                    <h2>Nuestros valores</h2>
+                    <ul className='info-texto'>
+                        <li>Compromiso</li>
+                        <li>Excelencia</li>
+                        <li>Puntualidad</li>
+                        <li>Innovacion</li>
+                        <li>Pasion</li>
+                    </ul>
                 </div>
             </div>
         </div>

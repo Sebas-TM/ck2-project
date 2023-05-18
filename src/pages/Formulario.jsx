@@ -11,6 +11,12 @@ const Formulario = ({ sede, setSede }) => {
     const [dep_prov, setDep_prov] = useState('')
     const [distrito, setDistrito] = useState('')
     const [fecha_nac, setFecha_nac] = useState('')
+    const [sexo, setSexo] = useState('')
+    const [direccion, setDireccion] = useState('')
+    const [distritoActual, setDistritoActual] = useState('')
+    const [telefono, setTelefono] = useState('')
+    const [celular, setCelular] = useState('')
+    const [correo, setCorreo] = useState('')
 
     console.log(nombre)
     return (
@@ -26,7 +32,7 @@ const Formulario = ({ sede, setSede }) => {
             <div className='contenedor-inputs'>
                 <div className='contenedor-inputs-primero'>
                     <h2>Datos personales</h2>
-                    <div className='contenedor-principal'>
+                    <div className='contenedor-principal-formulario'>
                         <div className='contenedor-datos-personales'>
                             <div className='datospersonales-group'>
                                 <label htmlFor="nombre">Nombres</label>
@@ -120,10 +126,81 @@ const Formulario = ({ sede, setSede }) => {
                                     id='fecha_nac'
                                     name='fecha_nac' />
                             </div>
+                            <div className='datospersonales-group'>
+                                <label htmlFor="fecha_nac">Sexo</label>
+                                <select
+                                    className='sexo'
+                                    id='sexo'
+                                    onChange={(e) => setSexo(e.target.value)}
+                                    value={sexo}
+                                >
+                                    <option>Masculino</option>
+                                    <option>Femenino</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div className='contenedor-nacimiento'>
+                            <h4 className='form-subtitulo'>Informacion actual</h4>
+                            <div className='datospersonales-group'>
+                                <label htmlFor="direccion">Direccion</label>
+                                <input
+                                    onChange={(e) => setDireccion(e.target.value)}
+                                    value={direccion}
+                                    type="text"
+                                    id='direccion'
+                                    name='direccion'
+                                    placeholder='Escribe tu direccion actual' />
+                            </div>
+                            <div className='datospersonales-group'>
+                                <label htmlFor="distritoActual">Distrito</label>
+                                <input
+                                    onChange={(e) => setDistritoActual(e.target.value)}
+                                    value={distritoActual}
+                                    type="text"
+                                    id='distritoActual'
+                                    name='distritoActual'
+                                    placeholder='Escribe el distrito donde resides actualmente' />
+                            </div>
+                            <div className='datospersonales-group'>
+                                <label htmlFor="telefono">Telefono fijo</label>
+                                <input
+                                    onChange={(e) => setTelefono(e.target.value)}
+                                    value={telefono}
+                                    type="text"
+                                    id='telefono'
+                                    name='telefono'
+                                    placeholder='Escribe tu numero de telefono' />
+                            </div>
+                            <div className='datospersonales-group'>
+                                <label htmlFor="celular">celular</label>
+                                <input
+                                    className='celular'
+                                    id='celular'
+                                    name='celular'
+                                    type='text'
+                                    onChange={(e) => setCelular(e.target.value)}
+                                    value={celular}
+                                    placeholder='Escribe tu numero de celular' />
+
+                            </div>
+                            <div className='datospersonales-group'>
+                                <label htmlFor="correo">Correo electronico</label>
+                                <input
+                                    className='correo'
+                                    id='correo'
+                                    name='correo'
+                                    type='email'
+                                    onChange={(e) => setCorreo(e.target.value)}
+                                    value={correo}
+                                    placeholder='Escribe tu correo electronico' />
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <button className='boton' onClick={()=>{alert('Se enviara la informacion a la base de datos')}}>Enviar</button>
         </form>
     )
 }

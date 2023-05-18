@@ -13,8 +13,8 @@
 }
 
 .contenedor-carrusel {
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .contenedor-carrusel .titulo {
@@ -25,6 +25,7 @@
     height: 20rem;
     width: 25rem;
     background-color: gray;
+    margin: 0 auto;
 }
 
 @media (min-width:768px) {
@@ -43,6 +44,17 @@
 
 
 
-.contenedor-informacion p {
+.contenedor-informacion p, ul {
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.info-texto{
+    font-size: 1.8rem;
+}
+
+li{
+    list-style: none;
 }

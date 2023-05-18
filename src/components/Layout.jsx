@@ -9,7 +9,7 @@ const Layout = () => {
     const year = new Date().getFullYear();
     const openMenu = () => {
         if(height == 50){
-            setHeight(200)
+            setHeight(150)
         }else{
             setHeight(50)
         }
@@ -27,7 +27,7 @@ const Layout = () => {
                         <FiMenu onClick={openMenu} className='burguer' />
                     </div>
                 </div>
-                <div className={height==200 ? 'active': 'navegacion'}>
+                <div className={height==150 ? 'active': 'navegacion'}>
                     <Link onClick={openMenu} to="/" className='link'>Inicio</Link>
                     <Link onClick={openMenu} to="/nosotros" className='link'>Nosotros</Link>
                     <Link onClick={openMenu} to="/contacto" className='link'>Contactanos</Link>
